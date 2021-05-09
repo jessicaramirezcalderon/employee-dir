@@ -1,9 +1,9 @@
 import axios from "axios";
 
 
-const ApiSearch = () => axios({
+const ApiSearch = (query) => axios({
     method: 'get',
-    url: 'https://randomuser.me/api/?results=30',
+    url: `https://randomuser.me/api/?results=30&name=${query}`,
     responseType: 'json',
 }).then(function (response) {
     // console.log('this is my data' + JSON.stringify(response.data))

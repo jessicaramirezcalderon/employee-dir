@@ -8,16 +8,16 @@ function EmployeeList(props) {
                     <img src={result.mediumPicture} />
                 </li>
 
-                <li className="list-group-item-warning">
-                    {result.name}
+                <li className="list-group-item">
+                    Name: {result.name}
                 </li>
 
                 <li className="list-group-item">
-                    {result.cell}
+                    Cell: {result.cell}
                 </li>
 
                 <li className="list-group-item">
-                    {result.email}
+                    Email: {result.email}
                 </li>
             </ul>
         ))
